@@ -4,41 +4,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    padding: 3.2rem;
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
 
     &__logo-box{
-        padding: 2.5rem 1.5rem;
+        width: 15%;
     }
 
     &__logo{
-        max-width: 15rem;
+        max-width: 12rem;
     }
 
     &__user-box{
         display: flex;
-        justify-content: space-around;
+        justify-content:end;
         align-items: center;
         color: $color-white;
-        width: 15rem;
-        padding: 2.5rem 1.5rem;
+        width: 15%;
     }
 
     &__user-img{
-        width: 4rem;
+        width: 3.8rem;
     }
 
     &__user-name{
         font-size: 1.4rem;
+        padding-left: .8rem;
     }
 
     &__input-box{
-        padding: 2.5rem 0;
+        width: 50%;
     }
 
     &__input{
-        width: 60rem;
         height: 4.5rem;
+        width: 100%;
         padding: 0 1rem;
         background-color: rgba($color-white, .16);
         color: $color-white;
@@ -47,6 +48,11 @@
         
         &::placeholder{
             color: rgba($color-white, .64);
+            font-weight: 100;
+        }
+
+        &:focus-visible{
+            outline: none;
         }
     }
 }
