@@ -1,0 +1,55 @@
+<section class="section-create">
+
+    <div class="section-create__highlight">
+        <div class="section-create__code-box" id="code-box">
+            <textarea class="section-create__textarea">
+            </textarea>
+            <div class="section-create__textarea-botoes-box">
+                <div class="section-create__textarea-botao section-create__textarea-botao--1"></div>
+                <div class="section-create__textarea-botao section-create__textarea-botao--2"></div>
+                <div class="section-create__textarea-botao section-create__textarea-botao--3"></div>
+            </div>
+        </div>
+
+        <a href="#" class="section-create__button-highlight">Visualizar com highlight</a>
+    </div>
+
+    <div class="section-create__project-form">
+
+        <form action="#" class="form">
+            <div class="u-margin-bottom-small">
+                <h3 class="heading-tertiary">Seu projeto</h3>
+            </div>
+
+            <div class="form__group u-margin-bottom-small">
+                <input id="name" type="text" class="form__input" placeholder="Nome do seu projeto" required>
+            </div>
+            <div class="form__group u-margin-bottom-medium">
+                <textarea name="description" id="description" rows="5" placeholder="Descrição do seu projeto"
+                    class="form__input" required></textarea>
+            </div>
+
+            <div class="u-margin-bottom-small">
+                <h3 class="heading-tertiary">Personalização</h3>
+            </div>
+
+            <div class="form__group form__group--select u-margin-bottom-small">
+                <select class = "form__input form__input--select" name="languages" id="languages">
+                    <option value="javascript">Javascript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Python">Python</option>
+                  </select>
+            </div>
+
+            <div class="form__group u-margin-bottom-small">
+                <input class = "form__input--color" type="color" id="favcolor" name="favcolor" [value]="color" (input) = "onColorChange($event)"><br><br>
+            </div>
+
+            <div class="form__group">
+                <button type="submit" class="form__button-save">Salvar projeto</button>
+            </div>
+        </form>
+
+    </div>
+</section>

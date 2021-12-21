@@ -1,0 +1,53 @@
+.form {
+    &__group {
+        position: relative;
+    }
+
+    &__group--select::after {
+        content: "\2304";
+        position: absolute;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        top: 0;
+        right: 1rem;
+        color: $color-white;
+    }
+    &__input {
+        font-family: inherit;
+        border-radius: $border-radius-small;
+        background-color: rgba($color-white, 0.16);
+        padding: 1.5rem 2rem;
+        border: none;
+        color: $color-white;
+        width: 100%;
+        transition: all .2s;
+        
+        &:hover{
+            background-color: rgba($color-white, 0.24);
+        }
+
+        &--select {
+            -webkit-appearance: none;
+            appearance: none;
+            color: rgba($color-white, 0.64);
+        }
+
+        &::-webkit-input-placeholder {
+            color: rgba($color-white, 0.64);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &--color {
+            height: 5rem;
+            background-color: transparent;
+            padding: 0.3rem 0.7rem;
+            border: 1px solid $color-white;
+            border-radius: $border-radius-small;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}

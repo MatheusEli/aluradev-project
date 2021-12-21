@@ -1,1 +1,34 @@
-<router-outlet></router-outlet>
+<app-header></app-header>
+<main class="main">
+    <section class="section-menu">
+        <div class="u-margin-left-medium u-margin-bottom-small">
+            <h3 class="heading-tertiary">Menu</h3>
+        </div>
+        <ul class="section-menu__list">
+            <li class="section-menu__option" routerLink = "home/create-project" id = "create-project-option">
+                <div class="section-menu__box-icon">    
+                    <svg class="section-menu__icon">
+                        <use xlink:href="../../assets/sprite.svg#icon-embed2"></use>
+                    </svg>
+                </div>
+                <p class="section-menu__text">
+                    Editor de códigos
+                </p>
+            </li>
+            <li class="section-menu__option" routerLink = "home/list-project" id = "list-project-option">
+                <div class="section-menu__box-icon">
+                    <svg class="section-menu__icon">
+                        <use xlink:href="../../assets/sprite.svg#icon-users"></use>
+                    </svg>
+                </div>
+                <p class="section-menu__text">
+                    Comunidade
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-project">
+        <router-outlet></router-outlet>
+    </section>
+</main>

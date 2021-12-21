@@ -1,0 +1,137 @@
+.main {
+    display: flex;
+}
+
+.section-menu {
+    flex: 0 0 26%;
+    height: 100vh;
+    background-color: $color-primary;
+    border-bottom-left-radius: $border-radius-large;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: $color-white;
+        padding: 1rem 3rem;
+        transition: all 0.2s;
+        &:hover {
+            background-color: rgba(72, 61, 139, 0.3);
+        }
+    }
+
+    &__box-icon {
+        background-color: $color-secondary;
+        border-radius: $border-radius-medium;
+        padding: 1.3rem;
+    }
+
+    &__icon {
+        color: $color-white;
+        fill: currentColor;
+
+        height: 2rem;
+        width: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        text-decoration: none;
+        color: $color-white;
+        margin-left: 1.5rem;
+    }
+}
+
+.section-project {
+    width: 100%;
+    border-bottom-right-radius: $border-radius-large;
+}
+
+.section-create {
+    background-color: $color-primary;
+    height: 100vh;
+    width: 100%;
+    border-bottom-right-radius: $border-radius-large;
+    display: flex;
+
+    &__highlight {
+        width: 65%;
+    }
+
+    &__code-box {
+        padding: 3rem 0;
+        background-color: #6bd1ff;
+        border-radius: $border-radius-small;
+        position: relative;
+    }
+
+    &__textarea {
+        color: $color-white;
+        background-color: $color-black;
+        border-radius: $border-radius-small;
+        box-shadow: 0 1.6rem 2.4rem rgba($color-black, 0.24);
+
+        height: 25rem;
+        width: 90%;
+
+        margin: 0 auto;
+        padding: 4rem 3rem;
+        display: block;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__textarea-botoes-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 4.3rem;
+        left: 4.7rem;
+    }
+
+    &__textarea-botao {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 0.7rem;
+        }
+
+        &--1 {
+            background-color: #ff5f56;
+        }
+
+        &--2 {
+            background-color: #ffbd2e;
+        }
+
+        &--3 {
+            background-color: #27c93f;
+        }
+    }
+
+    &__project-form {
+        width: 40%;
+        padding: 0 2.7rem;
+    }
+}
+
+.section-list {
+    background-color: $color-primary;
+    height: 100vh;
+    width: 100%;
+    border-bottom-right-radius: $border-radius-large;
+}

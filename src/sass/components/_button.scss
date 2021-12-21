@@ -1,0 +1,60 @@
+.section-create {
+    &__button-highlight:link,
+    &__button-highlight:visited {
+        color: $color-white;
+        background-color: rgba($color-secondary, 0.08);
+        border-radius: $border-radius-small;
+        padding: 1.1rem 0;
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 3rem;
+        transition: all .2s;
+        border: 4px solid transparent;
+    }
+
+    &__button-highlight:hover{
+        background-color: rgba($color-secondary, 0.16);
+    }
+
+    &__button-highlight:active{
+        border: 4px solid rgba($color-secondary, 0.24);
+    }
+
+    &__button-highlight:focus{
+        background-color: rgba($color-secondary, 0.24);
+    }
+}
+
+.form {
+    &__button-save {
+        background-color: $color-secondary;
+        border: none;
+        color: $color-primary;
+        border-radius: $border-radius-small;
+        padding: 2rem 0;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 100;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 4px solid transparent;
+
+        &:focus {
+            background-color: $color-secondary-light-2;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-secondary-light;
+        }
+
+        &:active {
+            border: 4px solid rgba($color-secondary, 0.72);
+            transform: translateY(2px);
+        }
+    }
+}

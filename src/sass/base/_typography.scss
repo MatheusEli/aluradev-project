@@ -1,6 +1,21 @@
 body {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-tertiary{
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.section-menu{
+
+  &__option{
+    font-size: 1.4rem;
   }
-  
+}
